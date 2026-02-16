@@ -18,11 +18,11 @@ from streamlit_option_menu import option_menu
  
 # import model
 
-loan_model = pickle.load(open("C:/Users/Lab/Desktop/ML/loan_model.sav", 'rb'))
+loan_model = pickle.load(open("loan_model.sav", 'rb'))
 
-heart_model = pickle.load(open("C:/Users/Lab/Desktop/ML/heartmodel.sav", 'rb'))
+heart_model = pickle.load(open("heartmodel.sav", 'rb'))
 
-ridingmowers_model = pickle.load(open("C:/Users/Lab/Desktop/ML/ridingmowers_model.sav", 'rb'))
+ridingmowers_model = pickle.load(open("ridingmowers_model.sav", 'rb'))
  
 with st.sidebar:
 
@@ -221,5 +221,6 @@ if(selected == 'heart'):
     st.success(heart_predict)
  
     
+
 
  
